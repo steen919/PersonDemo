@@ -1,6 +1,8 @@
 package se.jbwebb.sengvall.persondemo;
 
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 import android.app.Activity;
@@ -23,6 +25,18 @@ public class FormActivity extends Activity {
 		tvMobile = (TextView) findViewById(R.id.editText4);
 		
 		Button bSave = (Button) findViewById(R.id.button1);
+		
+		bSave.setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View v) {				
+				String name = tvName.getText().toString();
+				String address = tvAddress.getText().toString();
+				String zipcity = tvZipCity.getText().toString();
+				String mobile = tvMobile.getText().toString();							
+			}
+			
+		});
 		
 	}
 
