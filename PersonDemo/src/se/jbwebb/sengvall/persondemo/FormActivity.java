@@ -1,5 +1,7 @@
 package se.jbwebb.sengvall.persondemo;
 
+import java.util.ArrayList;
+
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -13,6 +15,8 @@ public class FormActivity extends Activity {
 	TextView tvAddress;
 	TextView tvZipCity;
 	TextView tvMobile;
+	
+	ArrayList<Person> persons = new ArrayList<Person>();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +37,10 @@ public class FormActivity extends Activity {
 				String name = tvName.getText().toString();
 				String address = tvAddress.getText().toString();
 				String zipcity = tvZipCity.getText().toString();
-				String mobile = tvMobile.getText().toString();							
+				String mobile = tvMobile.getText().toString();
+				
+				persons.add(new Person(name,address,zipcity,mobile));
+				
 			}
 			
 		});
