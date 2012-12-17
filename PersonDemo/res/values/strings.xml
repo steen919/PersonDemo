@@ -3,5 +3,11 @@
 
     <string name="app_name">PersonDemo</string>
     <string name="title_activity_form">FormActivity</string>
+    <string name="name_string">Namn</string>
+    <string name="adress_string">Adress</string>
+    <string name="padress_string">Postadress</string>
+    <string name="mobile_string">Mobilnummer</string>
+    <string name="save_string">Spara</string>
+    <string name="show_string">Visa alla</string>
 
 </resources>

@@ -10,7 +10,7 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Namn"
+        android:text="@string/name_string"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
@@ -28,7 +28,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Adress"
+        android:text="@string/adress_string"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
@@ -43,7 +43,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Postadress"
+        android:text="@string/adress_string"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
@@ -58,7 +58,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mobilnummer"
+        android:text="@string/mobile_string"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
@@ -81,7 +81,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:text="Spara" />
+            android:text="@string/save_string" />
 
         
 
@@ -92,7 +92,7 @@
             android:layout_alignBaseline="@+id/button1"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
-            android:text="Visa alla" />
+            android:text="@string/show_string" />
 
     </RelativeLayout>
 
