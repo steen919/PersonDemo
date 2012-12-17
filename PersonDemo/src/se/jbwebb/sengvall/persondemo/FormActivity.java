@@ -3,6 +3,7 @@ package se.jbwebb.sengvall.persondemo;
 import java.util.ArrayList;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -39,7 +40,9 @@ public class FormActivity extends Activity {
 				String zipcity = tvZipCity.getText().toString();
 				String mobile = tvMobile.getText().toString();
 				
-				persons.add(new Person(name,address,zipcity,mobile));
+				Person person = new Person(name,address,zipcity,mobile);
+				persons.add(person);
+				Log.i("Person", person.getName());
 				
 			}
 			
