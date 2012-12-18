@@ -43,7 +43,7 @@ public class FormActivity extends Activity {
 				
 				Person person = new Person(name,address,zipcity,mobile);
 				persons.add(person);
-				Log.i("Person", person.getName());
+				Log.d("Person", person.getName());
 				
 			}
 			
@@ -53,6 +53,16 @@ public class FormActivity extends Activity {
 
 			@Override
 			public void onClick(View v) {
+				
+				for ( int i = 0 ; i < persons.size() ; i++ ){
+					Person tmpPerson = persons.get(i);
+					String strPerson = "";
+					strPerson += tmpPerson.getName() + ", ";
+					strPerson += tmpPerson.getAddress() + ", ";
+					strPerson += tmpPerson.getZipcity() + ", ";
+					strPerson += tmpPerson.getMobile();
+					Log.d("Person " + i, strPerson);
+				}
 				
 			}
 			
