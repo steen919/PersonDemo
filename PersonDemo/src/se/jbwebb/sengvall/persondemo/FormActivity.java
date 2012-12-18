@@ -30,6 +30,7 @@ public class FormActivity extends Activity {
 		tvMobile = (TextView) findViewById(R.id.editText4);
 		
 		Button bSave = (Button) findViewById(R.id.button1);
+		Button bShow = (Button) findViewById(R.id.button2);
 		
 		bSave.setOnClickListener(new OnClickListener(){
 
@@ -43,6 +44,15 @@ public class FormActivity extends Activity {
 				Person person = new Person(name,address,zipcity,mobile);
 				persons.add(person);
 				Log.i("Person", person.getName());
+				
+			}
+			
+		});
+		
+		bShow.setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View v) {
 				
 			}
 			
