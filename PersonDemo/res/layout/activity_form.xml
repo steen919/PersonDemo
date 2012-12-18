@@ -17,9 +17,9 @@
         android:id="@+id/editText1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:ems="10"
-        android:inputType="textNoSuggestions|textPersonName"
-        android:layout_marginBottom="10dp" >
+        android:inputType="textNoSuggestions|textPersonName" >
 
         <requestFocus />
     </EditText>
@@ -50,9 +50,9 @@
         android:id="@+id/editText3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:ems="10"
-        android:inputType="textNoSuggestions|textPostalAddress"
-        android:layout_marginBottom="10dp" />
+        android:inputType="textNoSuggestions|textPostalAddress" />
 
     <TextView
         android:id="@+id/textView4"
